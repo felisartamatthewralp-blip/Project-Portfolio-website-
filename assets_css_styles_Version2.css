@@ -1,0 +1,65 @@
+/* Simple responsive styles for the personal site */
+:root{
+  --bg:#f6f7fb;
+  --card:#fff;
+  --accent:#2b6cb0;
+  --muted:#666;
+  --maxw:1000px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:#111;
+  line-height:1.5;
+}
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:1rem;
+}
+.site-header{
+  background:linear-gradient(90deg,#fff, #f8fbff);
+  border-bottom:1px solid #e6eef8;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.2rem}
+.nav a{margin-left:1rem;color:var(--muted);text-decoration:none;font-size:0.95rem}
+.nav a:hover{color:var(--accent)}
+
+.hero{display:flex;gap:1rem;align-items:center;padding:2rem 0}
+.profile{width:120px;height:120px;border-radius:12px;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 18px rgba(43,108,176,0.12)}
+.tagline{color:var(--muted);max-width:60ch}
+.btn{display:inline-block;padding:0.5rem 0.9rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid #ccdbea;color:var(--accent)}
+
+.summary, .featured{background:var(--card);padding:1rem;border-radius:10px;margin-top:1rem;box-shadow:0 6px 18px rgba(10,20,40,0.04)}
+.cards{display:flex;gap:1rem;flex-wrap:wrap}
+.card{flex:1 1 220px;background:#fff;padding:0.5rem;border-radius:8px;text-align:left}
+.card img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+.wide{width:100%;height:auto;border-radius:8px}
+
+.skills span{display:inline-block;background:#eef6ff;color:var(--accent);padding:0.3rem 0.6rem;margin:0.2rem;border-radius:6px}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+.narrow{max-width:720px}
+form label{display:block;margin:0.6rem 0}
+input,textarea{width:100%;padding:0.6rem;border:1px solid #e2e8f0;border-radius:6px}
+.form-actions{display:flex;gap:0.5rem;margin-top:0.6rem;align-items:center}
+.status{margin-top:0.5rem;color:var(--accent)}
+
+.site-footer{padding:1rem 0;margin-top:2rem;border-top:1px solid #e6eef8;background:transparent}
+@media(max-width:720px){
+  .hero{flex-direction:column;text-align:center}
+  .nav{display:none}
+}
