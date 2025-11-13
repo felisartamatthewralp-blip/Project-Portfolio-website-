@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Matthew Ralp Felisarta</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Matthew R. Felisarta</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <h1>Contact</h1>
+    <p>If you'd like to reach me, send a message using the form below or use the phone/email listed. The form uses a mailto fallback (no backend).</p>
+
+    <form id="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" id="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" id="message" rows="6" required></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Send</button>
+        <button type="button" id="mailto-btn" class="btn ghost">Open Mail Client</button>
+      </div>
+      <p id="form-status" class="status" aria-live="polite"></p>
+    </form>
+
+    <section>
+      <h2>Other ways to reach me</h2>
+      <ul>
+        <li>Phone: <a href="tel:+639617965102">09617965102</a></li>
+        <li>Email: <a href="mailto:matthewralp.felisarta24@gmail.com">matthewralp.felisarta24@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/felisartamatthewralp-blip" target="_blank" rel="noopener">github.com/felisartamatthewralp-blip</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Matthew Ralp Felisarta</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
