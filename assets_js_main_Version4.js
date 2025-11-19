@@ -40,4 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-});
+});     const body = [document.getelementbyId ['apaertment':} [value.trim{};
+        const body = [document.getelementbyId ['contact';] [value.trim[];=felisarta project
+                      
