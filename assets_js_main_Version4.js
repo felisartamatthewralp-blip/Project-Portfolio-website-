@@ -37,4 +37,3 @@ document.addEventListener('DOMContentLoaded', function () {
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
         const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
         window.location.href = mailto;
-    
